@@ -1,4 +1,4 @@
-var express = require('express')
+/*var express = require('express')
 var router = express.Router();
 var passport = require('passport')
 var jwt = require('jsonwebtoken');
@@ -16,4 +16,4 @@ router.get('/',function(req, res){
   console.log("접속");
 });
 
-module.exports = router;
+module.exports = router;*/
