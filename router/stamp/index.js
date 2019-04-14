@@ -400,7 +400,6 @@ router.post('/email',function(req, res){
                  })
               }
         })
-
         }
 
         })
