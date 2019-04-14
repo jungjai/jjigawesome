@@ -7,8 +7,8 @@ var jwt = require('jsonwebtoken');
 
 router.use('/auth', auth)
 var gen = rn.generator({
-  min: 100000,
-  max: 999999,
+  min:  100000,
+  max:  999999,
   integer: true
 })
 var nodemailer = require('nodemailer');
@@ -126,7 +126,7 @@ router.post('/reset', function(req, res) {
           var user_pw = req.body.password
           var user_id = token.data
           var sql = [user_pw,user_id]
-
+          // find for id
           query = connection.query('select * from user where ID =?', [user_id], function(err, rows) {
               if (err) {
                 res.json({
@@ -137,7 +137,7 @@ router.post('/reset', function(req, res) {
                 if (rows.length>0) {
                   console.log(1)
 
-
+                  // update
                   var query = connection.query('update user set password =?  where ID =? ', sql, function(err, rows) {
                     if (err) {
                       console.log(err)
