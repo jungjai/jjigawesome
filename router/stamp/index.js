@@ -90,7 +90,7 @@ router.post('/add',function(req,res){
     }
     else {
       var location = rows[0].name
-      var insertQuery = connection.query('insert into stamp values (?,?,?,now(),?,0,0)',[0,id,location,1],function(err,rows){
+      var insertQuery = connection.query('insert into stamp values (?,?,?,now(),?,0,0 )',[0,id,location,1],function(err,rows){
         if(err)
         {
           console.log("insert")
@@ -468,5 +468,19 @@ var thema = req.body.thema
   // process the promise
   p.then(respond).catch(onError)
 })
+//test
+router.get('/test',function(req, res){
+  var searchQuery = connection.query('select * from coupon where type = ?',[1],function(err,rows){
+    if(err)
+    {
+      console.log(err)
+      res.json({"status":"error"})
+    }
+    else {
+      res.send(JSON.parse(JSON.stringify(rows)));
+    }
+  })
 
+
+})
 module.exports = router;
