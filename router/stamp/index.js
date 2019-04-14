@@ -468,19 +468,5 @@ var thema = req.body.thema
   // process the promise
   p.then(respond).catch(onError)
 })
-//test
-router.get('/test',function(req, res){
-  var searchQuery = connection.query('select * from coupon where type = ?',[1],function(err,rows){
-    if(err)
-    {
-      console.log(err)
-      res.json({"status":"error"})
-    }
-    else {
-      res.send(JSON.parse(JSON.stringify(rows)));
-    }
-  })
 
-
-})
 module.exports = router;
