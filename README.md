@@ -70,6 +70,10 @@
 - [Mysql](https://www.mysql.com/) - DataBase
 - [AWS EC2](https://aws.amazon.com/ko/ec2/?sc_channel=PS&sc_campaign=acquisition_KR&sc_publisher=google&sc_medium=english_ec2_b&sc_content=ec2_e&sc_detail=aws%20ec2&sc_category=ec2&sc_segment=177228231544&sc_matchtype=e&sc_country=KR&s_kwcid=AL!4422!3!177228231544!e!!g!!aws%20ec2&ef_id=WkRozwAAAnO-lPWy:20180412120123:s) - 클라우드 환경 컴퓨팅 시스템
 
+## 영상
+
+- [찍어썸](https://www.youtube.com/watch?v=gd9is-lAb9o&t=61s)
+
 ## 개발자
 
 - **이정재** - [jungjai](https://github.com/jungjai)
